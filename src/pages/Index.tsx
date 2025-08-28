@@ -5,7 +5,7 @@ import CountdownTimer from '@/components/CountdownTimer';
 import VenueInfo from '@/components/VenueInfo';
 import RSVPModal from '@/components/RSVPModal';
 import VideoModal from '@/components/VideoModal';
-import heroBackground from '@/assets/wedding-hero-bg.jpg';
+import sunsetBackground from '@/assets/wedding-sunset-bg.jpg';
 
 const Index = () => {
   const [isRSVPOpen, setIsRSVPOpen] = useState(false);
@@ -17,7 +17,7 @@ const Index = () => {
       <section 
         className="min-h-screen flex items-center justify-center px-4 relative"
         style={{
-          backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url(${heroBackground})`,
+          backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url(${sunsetBackground})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
