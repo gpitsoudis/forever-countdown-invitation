@@ -5,6 +5,7 @@ import CountdownTimer from '@/components/CountdownTimer';
 import VenueInfo from '@/components/VenueInfo';
 import RSVPModal from '@/components/RSVPModal';
 import VideoModal from '@/components/VideoModal';
+import heroBackground from '@/assets/wedding-hero-bg.jpg';
 
 const Index = () => {
   const [isRSVPOpen, setIsRSVPOpen] = useState(false);
@@ -13,7 +14,15 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="wedding-hero min-h-screen flex items-center justify-center px-4">
+      <section 
+        className="min-h-screen flex items-center justify-center px-4 relative"
+        style={{
+          backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url(${heroBackground})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
         <div className="text-center max-w-4xl mx-auto animate-fade-in">
           <div className="flex justify-center mb-8">
             <div className="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center glow-shadow">
